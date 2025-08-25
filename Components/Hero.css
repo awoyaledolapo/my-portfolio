@@ -122,12 +122,12 @@
 
   h2,
   li:last-of-type {
-    background: linear-gradient(
-      canvasText 50%,
-      color-mix(in oklch, canvas, canvasText 25%)
-    );
-    background-clip: text;
-    color: #0000;
+   background: linear-gradient(
+    #111111 50%,    /* dark text color */
+    color-mix(in oklch, #ffffff, #111111 25%) /* lightened version */
+  );
+  background-clip: text;
+  color: transparent;
   }
 }
 
@@ -203,14 +203,24 @@
     box-sizing: border-box;
   }
 
-  body {
+  /* body {
     display: grid;
     place-items: center;
     min-height: 100vh;
     font-family: 'Geist', 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
       'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
       
-  }
+  } */
+   body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: 'Geist', 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
+    'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+
+  background: #ffffff;  /* force light background */
+  color: #111111;       /* force dark text */
+}
 
   body::before {
     --size: 45px;
@@ -242,7 +252,7 @@
   }
 
   .bear-link {
-    color: canvasText;
+     color: #111111;
     position: fixed;
     top: 1rem;
     left: 1rem;
