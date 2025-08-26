@@ -123,8 +123,8 @@
   h2,
   li:last-of-type {
    background: linear-gradient(
-    #111111 50%,    /* dark text color */
-    color-mix(in oklch, #ffffff, #111111 25%) /* lightened version */
+    #111111 50%,   
+    color-mix(in oklch, #ffffff, #111111 25%) 
   );
   background-clip: text;
   color: transparent;
@@ -146,20 +146,7 @@
     opacity: 0.5;
   }
 
-  /* h1 {
-    font-size: 160px;
-    --font-level: 8;
-    text-wrap: pretty;
-    line-height: 0.8;
-    margin: 0;
-    background: linear-gradient(
-      canvasText 60%,
-      color-mix(in oklch, canvas, canvasText)
-    );
-    background-clip: text;
-    color: #b0070700;
-   
-  } */
+  
 }
 
 /* ---------------- BASE ---------------- */
@@ -175,7 +162,7 @@
 
   
   
-
+   /* this is for the scroll ups  */
   :where(.fluid) {
     --fluid-min: calc(
       var(--font-size-min) * pow(var(--font-ratio-min), var(--font-level, 0))
@@ -203,14 +190,7 @@
     box-sizing: border-box;
   }
 
-  /* body {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    font-family: 'Geist', 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
-      'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
-      
-  } */
+  
    body {
   display: grid;
   place-items: center;
@@ -218,8 +198,8 @@
   font-family: 'Geist', 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
     'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
 
-  background: #ffffff;  /* force light background */
-  color: #111111;       /* force dark text */
+  background: #ffffff;  
+  color: #111111;       
 }
 
   body::before {
@@ -237,7 +217,7 @@
         50% 50% / var(--size) var(--size),
       linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
         var(--size) var(--size);
-     filter: blur(1px); /* Adjust the pixel value for desired blur intensity */
+     filter: blur(1px); 
   -webkit-filter: blur(1px);
   /* Make the mask fade to fully hidden (black) after 50% */
   -webkit-mask-image: linear-gradient(-10deg, transparent 50%, #000 50%);
@@ -299,6 +279,6 @@ div.tp-dfwv {
 }
 
 .animate-shine {
-  background-size: 200% auto; /* makes gradient wide enough to move */
+  background-size: 200% auto; 
   animation: shine 3s linear infinite;
 }
