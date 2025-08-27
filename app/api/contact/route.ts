@@ -13,10 +13,12 @@ export async function POST(req: Request) {
       success: true,
       message: "Thanks for contacting us! We’ll get back to you soon.",
     });
-  } catch (error) {
-    return NextResponse.json(
-      { success: false, message: "Something went wrong." },
-      { status: 500 }
-    );
-  }
-}
+  }  catch (error) {
+  console.error("Error submitting contact form:", error);
+
+  return NextResponse.json(
+    { success: false, message: "Something went wrong." },
+    { status: 500 }
+  );
+
+  }}

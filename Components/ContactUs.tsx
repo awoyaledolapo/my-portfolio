@@ -35,7 +35,7 @@ export default function ContactForm() {
         setStatus(data.message)
       }
       console.log(data)
-    } catch (err) {
+    } catch  {
       setStatus(" Something went wrong.")
     }
   }

@@ -56,7 +56,6 @@ const Hero: React.FC = () => {
 
   useEffect(() => {
     if (!animatedTextRef.current) return;
-
     const tl = gsap.timeline();
     tl.to(animatedTextRef.current, {
       duration: 2,
@@ -121,7 +120,7 @@ const Hero: React.FC = () => {
             <h2>
               <span aria-hidden="true">I can&nbsp;</span>
             </h2>
-            <ul aria-hidden="true" style={{ ["--count" as any]: 22 }}>
+            <ul aria-hidden="true" style={{ "--count": 22 } as React.CSSProperties}>
               {[
                 "design",
                
@@ -144,7 +143,7 @@ const Hero: React.FC = () => {
                 "transform",
                 "do it",
               ].map((text, i) => (
-                <li key={i} style={{ ["--i" as any]: i }}>
+    <li key={i} style={{ "--i": i } as React.CSSProperties}>
                   {text}.
                 </li>
               ))}
