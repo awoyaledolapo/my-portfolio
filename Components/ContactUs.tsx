@@ -41,7 +41,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-16 bg-white/50 backdrop-blur-md rounded-xl shadow-2xl lg:max-w-3xl md:max-w-2xl mx-auto px-6" id="contact">
+    <section className="py-16 bg-white/50 backdrop-blur-md rounded-xl shadow-2xl lg:max-w-6xl md:max-w-5xl max-w-[32rem] mx-auto px-6" id="contact">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center lg:text-start md:text-start">
         Let’s build an awesome project together!
       </h2>

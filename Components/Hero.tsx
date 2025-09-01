@@ -158,7 +158,7 @@ const Hero: React.FC = () => {
             <h2 className="fluid"><Socials/></h2>
           </section>
         </main>
-        <footer className="text-black ">ScavoMighty &copy; 2025</footer>
+        <footer className="text-center lg:text-start md:text-start text-black ">ScavoMighty &copy; 2025</footer>
       </div>
     </div>
   );

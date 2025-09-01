@@ -26,7 +26,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full flex items-center justify-between  md:px-20 py-4 z-50 transition-colors duration-300 ${
+      className={`fixed top-0 left-0 w-full flex items-center justify-between px-5 md:px-10 py-4 z-50 transition-colors duration-300 ${
         isScrolled ? "bg-white/50 backdrop-blur-md shadow-md" : "bg-transparent"
       }`}
     >
@@ -80,41 +80,41 @@ const Nav = () => {
       </div>
 
      
-      <button
-        className="md:hidden text-black"
+      <div
+        className="md:hidden text-black  "
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
+      </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-white/90 backdrop-blur-md shadow-md flex flex-col items-center py-6 gap-4 md:hidden">
+        <div className="absolute top-full left-0 w-full bg-[#176199] backdrop-blur-md shadow-md flex flex-col items-center py-6 gap-4 md:hidden">
           <Link
             href="/"
             onClick={() => setIsOpen(false)}
-            className="font-bold text-lg text-[#176199]"
+            className="font-bold text-lg text-[#f2f3f4] hover:underline underline-offset-4 transition"
           >
             Home
           </Link>
           <Link
             href="#about"
             onClick={() => setIsOpen(false)}
-            className="font-bold text-lg text-[#176199]"
+            className="font-bold text-lg text-[#f2f3f4] hover:underline underline-offset-4 transition"
           >
             About
           </Link>
            <Link
             href="#project"
             onClick={() => setIsOpen(false)}
-            className="font-bold text-lg text-[#176199]"
+            className="font-bold text-lg text-[#f2f3f4] hover:underline underline-offset-4 transition"
           >
             Project
           </Link>
           <Link
             href="#contact"
             onClick={() => setIsOpen(false)}
-            className="font-bold text-lg text-[#176199]"
+            className="font-bold text-lg text-[#f2f3f4] hover:underline underline-offset-4 transition"
           >
             Contact
           </Link>

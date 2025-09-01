@@ -1,3 +1,20 @@
+@media (max-width: 700px) {
+  body::before {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    -webkit-mask-image: linear-gradient(-5deg, transparent 10%, #000 60%);
+    mask-image: linear-gradient(-5deg, transparent 10%, #000 60%);
+  }
+}
+@media (max-width: 700px) {
+  body::before {
+    width: 100%;
+    -webkit-mask-image: linear-gradient(-5deg, transparent 10%, #000 20%);
+    mask-image: linear-gradient(-5deg, transparent 10%, #000 90%);
+  }
+}
 /* @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @import url('https://unpkg.com/normalize.css') layer(normalize); */
 
@@ -194,12 +211,14 @@
    body {
   display: grid;
   place-items: center;
+  
   min-height: 100vh;
   font-family: 'Geist', 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
     'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
 
   background: #ffffff;  
-  color: #111111;       
+  color: #111111;   
+    
 }
 
   body::before {
@@ -207,7 +226,7 @@
     --line: rgb(64, 63, 63);
     content: '';
     height: 100vh;
-    width: 100vw;
+  width: 100%;
     position: fixed;
     background: linear-gradient(
           90deg,

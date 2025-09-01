@@ -65,12 +65,14 @@ const About = () => {
           DOLAPO AWOYALE - FRONTEND DEV
         </h3>
         <p className="text-gray-600 leading-relaxed mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum.
+          Hi, I’m Dolapo Awoyale 👋 , a passionate Frontend Developer who loves building
+  modern, responsive, and user-friendly web applications. I specialize in turning
+  ideas and designs into interactive digital experiences using
+  <span className="font-semibold"> HTML, CSS, Tailwind CSS, JavaScript, React,</span> 
+  and <span className="font-semibold">Next.js</span>. 
+  My focus is on writing clean, efficient code while creating interfaces that feel 
+  smooth and intuitive. I’m driven by the goal of delivering products that not only
+  work seamlessly but also leave users with a great experience.
         </p>
 
         {/* Social Icons */}

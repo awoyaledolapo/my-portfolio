@@ -23,11 +23,11 @@ export default function ProjectSection() {
         
              { projects.map((p,index)=>(
 
-            <div key={index} className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center lg:gap-8 md:gap-8 relative mb-18 ">
+            <div key={index} className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center lg:gap-8  relative mb-18 ">
             
            
               
-                <div  className="md:w-1/2 lg:w-1/2 w-[32rem] sm:w-[32rem] relative z-10 lg:-mr-12">
+                <div  className=" lg:w-1/2 w-[32rem] sm:w-[32rem] relative z-10 lg:-mr-12 md:-mr-12">
                     <div className="bg-white/50 backdrop-blur-md rounded-xl p-6 shadow-xl">
                         <p className="text-sm text-[#176199] uppercase">Featured Project</p>
                         <h2 className="text-3xl font-bold mb-3 text-gray-900">{p.name} </h2>
@@ -38,7 +38,7 @@ export default function ProjectSection() {
                 </div>
 
               
-                <div className="md:w-1/2 ">
+                <div className=" lg:w-1/2  md:w-[40rem]">
                  <Link href={p.link ?? "#"} target="_blank" rel="noopener noreferrer">
                     <Image src={p.image} 
                     alt=""
