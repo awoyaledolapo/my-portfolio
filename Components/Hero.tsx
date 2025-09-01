@@ -78,17 +78,16 @@ const Hero: React.FC = () => {
       <div ref={heroRef}>
         <header className="px-[5rem] py-[9rem]">
   <div className="flex flex-col gap-0 leading-none tracking-tight">
-    <h3 className="m-0 text-4xl font-bold leading-none text-[#28282B]">
+
+    <h3 className="m-0 text-4xl font-bold leading-none text-[#28282B]  p-0">
       Hi <span className="text-[#176199] font-bold">there</span>
     </h3>
-
-    <div className={`${archivoBlack.className} text-black`}>
-     
+    <div className={`${archivoBlack.className} text-black  lg:mt-[-1px] md:mt-[30px] p-0`}>
       <div className="flex items-center gap-2 leading-none">
-        <span className="font-bold text-[72px] lg:text-[100px]">Dolapo here.</span>
+        <span className="font-bold text-[72px] lg:text-[100px]">Dolapo Here.</span>
         <div
           ref={flairRef}
-          className="select-none cursor-grab active:cursor-grabbing touch-none -translate-y-1"
+          className="select-none hidden lg:inline-block bg-transparent cursor-grab active:cursor-grabbing touch-none -translate-y-1"
         >
           <Image src={img} alt="" width={324} height={124} />
         </div>
@@ -97,7 +96,7 @@ const Hero: React.FC = () => {
    
       <span
         ref={animatedTextRef}
-        className={`${rubikDistressed.className} block text-[40px] lg:text-[60px] text-black leading-none mt-[-6px]`}
+        className={`${rubikDistressed.className} block text-[40px] lg:text-[60px] text-black leading-none m`}
       />
     </div>
 

@@ -8,7 +8,7 @@ export default function Socials() {
         href="https://github.com/yourusername"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black hover:text-gray-600 transition"
+        className="text-black hover:text-[#176199] transition"
       >
         <Github size={28} />
       </a>
@@ -18,9 +18,9 @@ export default function Socials() {
         href="https://discord.gg/yourserver"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black hover:text-gray-600 transition"
+        className="text-black hover:text-[#176199] transition"
       >
-      <FaDiscord size={28} className="text-black hover:text-gray-600 transition" />
+      <FaDiscord size={28} className="text-black hover:text-[#176199] transition" />
       </a>
 
       {/* LinkedIn */}
@@ -28,7 +28,7 @@ export default function Socials() {
         href="https://linkedin.com/in/yourusername"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black hover:text-gray-600 transition"
+        className="text-black hover:text-[#176199] transition"
       >
         <Linkedin size={28} />
       </a>
@@ -38,7 +38,7 @@ export default function Socials() {
         href="https://twitter.com/yourusername"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black hover:text-gray-600 transition"
+        className="text-black hover:text-[#176199] transition"
       >
         <Twitter size={28} />
       </a>

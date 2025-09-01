@@ -4,10 +4,10 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { name, email, subject, message } = body;
+    const { name, email, budget, company, message } = body;
 
 
-    console.log("Contact form submission:", { name, email, subject, message });
+    console.log("Contact form submission:", { name, email,  budget, company, message });
 
     return NextResponse.json({
       success: true,

@@ -41,12 +41,12 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="py-16 bg-white/50 backdrop-blur-md rounded-xl shadow-2xl max-w-3xl mx-auto px-6" id="contact">
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10">
+    <section className="py-16 bg-white/50 backdrop-blur-md rounded-xl shadow-2xl lg:max-w-3xl md:max-w-2xl mx-auto px-6" id="contact">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center lg:text-start md:text-start">
         Let’s build an awesome project together!
       </h2>
 
-      <form className="space-y-8" onSubmit={handleSubmit}>
+      <form className="space-y-8 p-6" onSubmit={handleSubmit} >
    
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
