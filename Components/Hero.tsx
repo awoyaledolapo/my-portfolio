@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
     <div>
       <div ref={heroRef}>
         <header className="px-[5rem] py-[9rem]">
-  <div className="flex flex-col gap-0 leading-none tracking-tight">
+  <div className="flex flex-col gap-0 leading-none tracking-tight ">
 
     <h3 className="m-0 text-4xl font-bold leading-none text-[#28282B]  p-0">
       Hi <span className="text-[#176199] font-bold">there</span>
@@ -115,7 +115,7 @@ const Hero: React.FC = () => {
 
          
         <main>
-          <section className="content fluid">
+          <section className="content fluid  ">
             <h2>
               <span aria-hidden="true">I can&nbsp;</span>
             </h2>
@@ -150,7 +150,7 @@ const Hero: React.FC = () => {
           </section>
 
        
-            {/* <Stacks/> */}
+          
             <About />
           <ProjectSection/>
           <ContactForm/>

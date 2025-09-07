@@ -1,6 +1,7 @@
 
 import img1 from "@/public/projects/creative-landing page .png"
 import img2 from "@/public/projects/ticket-gen.png"
+import img3 from "@/public/projects/insure.png"
 import Image from "next/image"
 import Link from "next/link"
 const projects = [
@@ -15,6 +16,13 @@ const projects = [
         name:"TZ Ticket Generator",
         about: " A landing page for a photography website built with Next.js, TypeScript, and Tailwind CSS, showcasing the company’s portfolio of images. The project is deployed and hosted on Vercel."
     },
+    {
+        image: img3,
+        name:"Insure",
+         link:"//insured-indol.vercel.app",
+        about: " A landing page for a photography website built with Next.js, TypeScript, and Tailwind CSS, showcasing the company’s portfolio of images. The project is deployed and hosted on Vercel."
+    }
+
 ]
 export default function ProjectSection() {
     return (

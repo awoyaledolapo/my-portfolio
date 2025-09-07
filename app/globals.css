@@ -42,12 +42,12 @@ button:hover, .btn:hover, .card:hover, .project-thumb:hover {
   --font-mono: var(--font-geist-mono);
 } */
 
-@media (prefers-color-scheme: white) {
+/* @media (prefers-color-scheme: white) {
   :root {
     --background: #fffdfd;
     --foreground: #f9f4f4;
   }
-}
+} */
 
 
 
